@@ -64,6 +64,7 @@ public class PieView extends View {
             canvas.drawArc(rect, currentStartAngle, pie.getAngle(), true, mPaint); //绘制不同的饼状图
             currentStartAngle += pie.getAngle(); //每次更新绘制的起始角度
         }
+        canvas.restore();
     }
 
     public void setData(List<PieData> data) {
