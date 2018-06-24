@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
     <com.zpw.views.exercise6.DropViewPager
         android:id="@+id/mViewPager"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:layout_above="@+id/circleIndicator"
         android:layout_alignParentTop="true">
     </com.zpw.views.exercise6.DropViewPager>
@@ -40,4 +39,15 @@
 
     </com.zpw.views.exercise6.DropIndicator>
 
+    <com.zpw.views.exercise7.CameraImageView
+        android:id="@+id/img_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"/>
+
+    <com.zpw.views.exercise7.NoticeImageView
+        android:id="@+id/img_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/test_alpha_click"/>
 </RelativeLayout>
