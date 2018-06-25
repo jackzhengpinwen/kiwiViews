@@ -38,16 +38,4 @@
             android:src="@mipmap/msg" />
 
     </com.zpw.views.exercise6.DropIndicator>
-
-    <com.zpw.views.exercise7.CameraImageView
-        android:id="@+id/img_camera"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorAccent"/>
-
-    <com.zpw.views.exercise7.NoticeImageView
-        android:id="@+id/img_notice"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/test_alpha_click"/>
 </RelativeLayout>

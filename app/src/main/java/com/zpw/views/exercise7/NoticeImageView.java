@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.zpw.views.R;
-
 /**
  * Created by zpw on 2018/6/24.
  */
@@ -40,7 +38,7 @@ public class NoticeImageView extends AppCompatImageView {
                         int childCount = parent.getChildCount();
                         for (int i = 0; i < childCount; i++) {
                             View child = parent.getChildAt(i);
-                            if (child.getId() == R.id.img_camera && child instanceof CameraImageView) {
+                            if (child instanceof CameraImageView) {
                                 ((CameraImageView)child).click(child);
                                 break;
                             }
