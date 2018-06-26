@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zpw.views.exercise9.ViewGroup1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zpw.views.exercise9.ViewGroup2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <com.zpw.views.exercise9.View1
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"/>
+        </com.zpw.views.exercise9.ViewGroup2>
+    </com.zpw.views.exercise9.ViewGroup1>
+
+</RelativeLayout>
