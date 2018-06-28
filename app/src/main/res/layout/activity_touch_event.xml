@@ -6,15 +6,24 @@
 
     <com.zpw.views.exercise9.ViewGroup1
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
         <com.zpw.views.exercise9.ViewGroup2
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary">
             <com.zpw.views.exercise9.View1
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"/>
+                android:layout_margin="100dp"
+                android:filterTouchesWhenObscured="true"
+                android:background="@android:color/white"/>
+            <com.zpw.views.exercise9.View2
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="100dp"
+                android:background="@android:color/black"/>
         </com.zpw.views.exercise9.ViewGroup2>
     </com.zpw.views.exercise9.ViewGroup1>
 

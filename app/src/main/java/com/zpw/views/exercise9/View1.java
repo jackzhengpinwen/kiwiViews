@@ -29,9 +29,20 @@ public class View1 extends View {
     }
 
     @Override
+    public boolean onFilterTouchEventForSecurity(MotionEvent event) {
+        if ((event.getFlags() & MotionEvent.FLAG_WINDOW_IS_OBSCURED) == MotionEvent.FLAG_WINDOW_IS_OBSCURED){
+            // show error message
+            return false;
+        }
+//        return false;
+        return super.onFilterTouchEventForSecurity(event);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d(TAG, "onTouchEvent: action=" + event.getAction());
         return super.onTouchEvent(event);
+//        return true;
     }
 
 }
