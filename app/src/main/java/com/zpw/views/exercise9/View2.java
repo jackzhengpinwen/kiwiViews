@@ -1,6 +1,7 @@
 package com.zpw.views.exercise9;
 
 import android.content.Context;
+import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -39,6 +40,20 @@ public class View2 extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d(TAG, "onTouchEvent: action=" + event.getAction());
+        float x = event.getX();
+        float y = event.getY();
+        //情况一
+        Matrix matrix = new Matrix();
+        matrix.preTranslate(x, y);
+        matrix.preRotate(30);
+        Log.d(TAG, "onTouchEvent: " + matrix.toShortString());
+
+        //情况二
+        matrix = new Matrix();
+        matrix.postRotate(30);
+        matrix.postTranslate(x, y);
+        Log.d(TAG, "onTouchEvent: " + matrix.toShortString());
+
         return super.onTouchEvent(event);
 //        return true;
     }
