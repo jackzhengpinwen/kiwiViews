@@ -4,17 +4,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import com.zpw.views.exercise11.PhotoView;
+import com.zpw.views.exercise12.SlideTapeView;
 
 public class MainActivity extends AppCompatActivity {
-    private final String TAG = "MainActivity";
+    private final String TAG = "MainActivity";// 1464 976 732 488 366
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        PhotoView photoView = new PhotoView(this);;
-        photoView.setImageResource(R.mipmap.pos0);
-        setContentView(photoView);
+        SlideTapeView tapeView = new SlideTapeView(this);
+        tapeView.setShortPointCount(10);
+        tapeView.setValue(30, 31);
+        tapeView.setLongUnix(1);
+        setContentView(tapeView);
     }
 
     @Override
