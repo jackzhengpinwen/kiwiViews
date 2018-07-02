@@ -4,19 +4,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import com.zpw.views.exercise12.SlideTapeView;
+import com.zpw.views.exercise13.HealthStateView;
 
 public class MainActivity extends AppCompatActivity {
-    private final String TAG = "MainActivity";// 1464 976 732 488 366
+    private final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SlideTapeView tapeView = new SlideTapeView(this);
-        tapeView.setShortPointCount(10);
-        tapeView.setValue(30, 31);
-        tapeView.setLongUnix(1);
-        setContentView(tapeView);
+        HealthStateView view = new HealthStateView(this);
+        setContentView(view);
     }
 
     @Override
