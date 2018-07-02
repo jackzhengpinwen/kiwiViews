@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import com.zpw.views.exercise13.HealthStateView;
+import com.zpw.views.exercise14.PercentView;
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        HealthStateView view = new HealthStateView(this);
-        setContentView(view);
+        PercentView percentView = new PercentView(this);
+        setContentView(percentView);
     }
 
     @Override
