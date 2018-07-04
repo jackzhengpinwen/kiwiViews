@@ -90,7 +90,7 @@ public class JiKeTitleView extends SmoothViewGroup {
 
             cr = cl + mWidth;
             cb = ct + mHeight;
-            
+
             childView.layout(cl, ct, cr, cb);
         }
     }

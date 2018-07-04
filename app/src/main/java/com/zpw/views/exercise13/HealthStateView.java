@@ -49,7 +49,7 @@ public class HealthStateView extends View {
     private int mIndexInternal = 22;
 
     private ValueAnimator mRunAnimator;
-    private int currentState = 1;
+    private int currentState = -1;
     private int mOffsetTop = 0;
 
     private int mLeftOffset = -1;
@@ -116,13 +116,13 @@ public class HealthStateView extends View {
         if (!TextUtils.isEmpty(mText)) {
             drawText(canvas);//绘制文字
         }
-        if (mDetailResId != - 1) {
+        if (mDetailResId != - 1 && !TextUtils.isEmpty(mText)) {
             drawDetail(canvas);//绘制详情
         }
         if (mPoint != -1) {
             drawPoint(canvas);//绘制分数
         }
-        if (mIndexText != null && mIndexText.length > 0) {
+        if (mIndexText != null && mIndexText.length > 0 ) {
             drawState(canvas);//绘制状态
         }
         invalidate();
@@ -227,6 +227,10 @@ public class HealthStateView extends View {
 
     public void setDetailInterfaceListener(DetailInterfaceListener detailInterfaceListener) {
         mDetailInterfaceListener = detailInterfaceListener;
+    }
+
+    public void setCurrentState(int currentState) {
+        this.currentState = currentState;
     }
 
     //=======================================================
