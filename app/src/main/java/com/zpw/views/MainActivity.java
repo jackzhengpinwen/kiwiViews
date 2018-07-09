@@ -5,17 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import com.zpw.views.exercise20.ParticleView;
-
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_particle);
-        ((ParticleView)findViewById(R.id.pv_github)).startAnim();
+        
     }
 
     @Override
