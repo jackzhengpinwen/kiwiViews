@@ -22,7 +22,7 @@ import android.widget.ImageView;
 import com.zpw.views.R;
 
 public class TransitionExampleActivity extends AppCompatActivity {
-    private final String TAG = "MainActivity";
+    private final String TAG = "NestedScrollViewActivity";
 
     private FrameLayout mFrtContent;
     private int mDuration;

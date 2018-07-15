@@ -21,7 +21,7 @@ import android.widget.TextView;
 import com.zpw.views.R;
 
 public class CoordinatorLayoutActivity extends AppCompatActivity {
-    private final String TAG = "MainActivity";
+    private final String TAG = "NestedScrollViewActivity";
     private CoordinatorLayout mViewgroup;
     private ImageView mMsg;
     private Toolbar mToolbar;
