@@ -14,8 +14,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zpw.views.R;
@@ -67,6 +69,13 @@ public class CoordinatorLayoutActivity extends AppCompatActivity {
         RecyclerView rv = (RecyclerView) findViewById(R.id.rv_test);
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setAdapter(new RVAdapter());
+
+        ListView lv = (ListView) findViewById(R.id.lv_test);
+        lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+                new String[] {"1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"
+                        , "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"
+                        , "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"
+                        , "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"}));
     }
 
     public static class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
