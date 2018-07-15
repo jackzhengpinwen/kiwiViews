@@ -12,7 +12,8 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".exercise25.CollapsingToolbarLayoutActivity">
+            android:name=".exercise26.AppBarLayoutOverScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionAndStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
