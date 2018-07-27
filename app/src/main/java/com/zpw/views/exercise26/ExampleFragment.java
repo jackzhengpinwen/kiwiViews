@@ -1,12 +1,11 @@
 package com.zpw.views.exercise26;
 
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 
 import com.zpw.views.R;
 
@@ -16,11 +15,13 @@ import com.zpw.views.R;
 
 public class ExampleFragment extends Fragment {
     private final static String BACKGROUND_COLOR = "background_color";
+    private final static String BACKGROUND_DRAWABLE = "background_drawable";
 
-    public static ExampleFragment newInstance(@ColorRes int IdRes) {
+    public static ExampleFragment newInstance(int IdRes) {
         ExampleFragment frag = new ExampleFragment();
         Bundle b = new Bundle();
         b.putInt(BACKGROUND_COLOR, IdRes);
+        b.putInt(BACKGROUND_DRAWABLE, IdRes);
         frag.setArguments(b);
         return frag;
     }
@@ -34,8 +35,8 @@ public class ExampleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, null);
-        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.fragment_main_linearlayout);
-        linearLayout.setBackgroundResource(getArguments().getInt(BACKGROUND_COLOR));
+        ImageView bg = (ImageView) view.findViewById(R.id.bg_img);
+        bg.setImageDrawable(getActivity().getResources().getDrawable(getArguments().getInt(BACKGROUND_DRAWABLE)));
 
         return view;
     }

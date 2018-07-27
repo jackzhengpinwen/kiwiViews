@@ -45,13 +45,21 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/main_drawer_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/main_drawer_navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:visibility="gone"-->
+        <!--app:headerLayout="@layout/layout_drawer_header"-->
+        <!--app:menu="@menu/menu_drawer"/>-->
+
+    <FrameLayout
+        android:id="@+id/test_bed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:background="@android:color/white"
-        app:headerLayout="@layout/layout_drawer_header"
-        app:menu="@menu/menu_drawer"/>
+        android:layout_gravity="start"/>
 
 </android.support.v4.widget.DrawerLayout>

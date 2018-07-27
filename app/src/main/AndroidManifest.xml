@@ -10,16 +10,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity
-            android:name=".exercise26.AppBarLayoutOverScrollViewActivity"
-            android:theme="@style/AppTheme.NoActionAndStatusBar">
+        <activity android:name=".exercise35.SlideShowActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".exercise28.demodslv.TestBedDSLV"
+                  android:label="Basic usage" />
+        <activity android:name=".exercise28.demodslv.ArbItemSizeDSLV"
+                  android:label="Arbitrary item heights" />
+        <activity android:name=".exercise28.demodslv.WarpDSLV"
+                  android:label="Warp" />
+        <activity android:name=".exercise28.demodslv.BGHandle"
+                  android:label="Background handle" />
+        <activity android:name=".exercise28.demodslv.Sections"
+                  android:label="Sections" />
+        <activity android:name=".exercise28.demodslv.CursorDSLV"
+                  android:label="Cursor-backed" />
+        <activity android:name=".exercise28.demodslv.MultipleChoiceListView"
+                  android:label="Multi-select list" />
+        <activity android:name=".exercise28.demodslv.SingleChoiceListView"
+                  android:label="Single-choice list" />
+
+        <activity
+            android:name="com.zpw.views.exercise31.ViewPagerActivity"
+            android:label="ViewPager"
+            android:theme="@style/AppTheme.ViewPagerTheme"/>
     </application>
 
 </manifest>
